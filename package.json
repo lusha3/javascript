@@ -1,0 +1,24 @@
+{
+  "name": "lushajscode",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lusha3/javascript.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lusha3/javascript/issues"
+  },
+  "homepage": "https://github.com/lusha3/javascript#readme",
+  "dependencies": {
+    "prop-types": "^15.6.2",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2"
+  }
+}
