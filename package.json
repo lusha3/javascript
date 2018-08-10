@@ -2,9 +2,12 @@
   "name": "lushajscode",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:web": "sudo webpack --config build/webpack.config.js --mode development",
+    "clear": "sudo rimraf dist",
+    "build": "tnpm run clear && tnpm run build:web"
   },
   "repository": {
     "type": "git",
@@ -17,8 +20,20 @@
   },
   "homepage": "https://github.com/lusha3/javascript#readme",
   "dependencies": {
+    "babel": "^6.23.0",
+    "html-webpack-plugin": "^3.2.0",
     "prop-types": "^15.6.2",
     "react": "^16.4.2",
-    "react-dom": "^16.4.2"
+    "react-dom": "^16.4.2",
+    "react-router": "^4.3.1"
+  },
+  "devDependencies": {
+    "babel-loader": "^7.1.5",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-es2015-loose": "^8.0.0",
+    "babel-preset-react": "^6.24.1",
+    "rimraf": "^2.6.2",
+    "webpack": "^4.16.5",
+    "webpack-cli": "^3.1.0"
   }
 }
