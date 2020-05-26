@@ -1,5 +1,5 @@
 {
-  "name": "lushajscode",
+  "name": "webpack-wll",
   "version": "1.0.0",
   "description": "",
   "private": true,
@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build:web": "sudo webpack --config build/webpack.config.js --mode development",
     "clear": "sudo rimraf dist",
-    "build": "tnpm run clear && tnpm run build:web"
+    "build": "tnpm run clear && tnpm run build:web",
+    "start": "webpack"
   },
   "repository": {
     "type": "git",
@@ -28,12 +29,17 @@
     "react-router": "^4.3.1"
   },
   "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
     "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-es2015-loose": "^8.0.0",
+    "babel-preset-latest": "^6.24.1",
     "babel-preset-react": "^6.24.1",
     "rimraf": "^2.6.2",
-    "webpack": "^4.16.5",
-    "webpack-cli": "^3.1.0"
-  }
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10"
+  },
+  "main": "index.js"
 }
